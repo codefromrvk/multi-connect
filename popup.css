@@ -1,0 +1,103 @@
+
+body{
+  width: 260px;
+  height: 260px;
+  background-color: #1f1a2a;
+  border-radius: 2px;
+  color: white;
+}
+
+
+
+button.current {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.progress {
+  position: absolute;   
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  margin: -80px 0 0 -80px;
+}
+
+.progress-circle {
+transform: rotate(-90deg);
+margin-top: -25px;
+}
+
+.progress-circle-back {
+fill: none; 
+stroke: #D2D2D2;
+stroke-width:10px;
+}
+
+.progress-circle-prog {
+fill: none; 
+stroke: #7E3451;
+stroke-width: 10px;  
+stroke-dasharray: 0 999;    
+stroke-dashoffset: 0px;
+  transition: stroke-dasharray 0.7s linear 0s;
+}
+
+.progress-text {
+  width: 100%;
+  position: absolute;
+  top: 83px;
+  left: 30px;
+  text-align: center;
+  font-size: 2em;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: #4c3f5b;;
+}
+
+.settings-icon{
+  width: 20px;
+  height: 20px;
+  margin-left: 1rem;
+  box-shadow: 0 0 3px black;
+  border-radius: 3px;
+  padding: 0.2rem;
+  background-color: white;
+}
+.settings{
+  cursor: pointer;
+
+}
+#connect-btn{
+
+  border-radius: 5px;
+
+  position: absolute;
+  bottom: 1rem;
+  background-color: #ffa4a4;
+  left: 3rem;
+  padding: 0.3rem 0.6rem;
+
+}
+#connect-btn:hover{
+  border: 2px solid rgb(75, 75, 175);
+  cursor: pointer;
+}
+main span{
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+}

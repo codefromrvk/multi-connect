@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="count"></div>
+    <header>
+      <span>LinkedIN AutoConnect</span>
+      <a class="settings"
+        ><img class="settings-icon" src="images/settings.png"
+      /></a>
+    </header>
+    <main>
+      <span>Invitations sent</span>
+      <div class="progress">
+        <svg
+          class="progress-circle"
+          width="200px"
+          height="200px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle class="progress-circle-back" cx="80" cy="80" r="50"></circle>
+          <circle class="progress-circle-prog" cx="80" cy="80" r="50"></circle>
+        </svg>
+        <div class="progress-text" data-progress="0">0</div>
+      </div>
+      <button id="connect-btn">START CONNECTING</button>
+    </main>
+    <button id="redirect-btn" style="margin: auto; padding: 0 1rem">
+      LinkedIN
+    </button>
+
+    <script src="popup.js"></script>
+    <script src="jquery.js"></script>
+  </body>
+</html>
